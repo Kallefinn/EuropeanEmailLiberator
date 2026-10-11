@@ -11,7 +11,12 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         self.ui.Anwenden.clicked.connect(self.choiceApproved)
     def choiceApproved(self):
-        emaillist = getEmaillist(self.ui.LandDropBox.currentText())
+        country = self.ui.LandDropBox.currentText()
+        faction = self.ui.FraktionDropBox.currentText()
+        weirdthing = self.ui.OrganDropBox.currentText()
+        name = self.ui.NameInput.displayText()
+
+        emaillist = getEmaillist(country,faction,weirdthing,name)
         self.text = "\n".join(emaillist)
         self.ui.OutputTextBox.setText(self.text)
 
