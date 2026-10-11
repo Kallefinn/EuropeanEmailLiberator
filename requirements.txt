@@ -1,1 +1,5 @@
 pyside6
+requests
+bs4
+re
+
