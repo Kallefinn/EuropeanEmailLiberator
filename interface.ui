@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>750</width>
-    <height>680</height>
+    <width>515</width>
+    <height>603</height>
    </rect>
   </property>
   <property name="palette">
@@ -486,7 +486,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>200</y>
+     <y>110</y>
      <width>211</width>
      <height>26</height>
     </rect>
@@ -498,7 +498,7 @@
     <bool>true</bool>
    </property>
    <property name="currentText">
-    <string/>
+    <string>Belgien</string>
    </property>
    <item>
     <property name="text">
@@ -645,7 +645,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>160</y>
+     <y>70</y>
      <width>181</width>
      <height>20</height>
     </rect>
@@ -660,41 +660,12 @@
     <string>LAND</string>
    </property>
   </widget>
-  <widget class="QLabel" name="NameLabel">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>70</y>
-     <width>181</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>17</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>NAME</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="NameInput">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>110</y>
-     <width>211</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QFrame" name="OutputBox">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>290</y>
-     <width>711</width>
+     <y>200</y>
+     <width>471</width>
      <height>321</height>
     </rect>
    </property>
@@ -718,9 +689,9 @@
   <widget class="QLabel" name="TitleLabel">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>50</x>
      <y>0</y>
-     <width>341</width>
+     <width>421</width>
      <height>51</height>
     </rect>
    </property>
@@ -731,7 +702,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Europa Parlament Email Zieher</string>
+    <string>Europeanparlament Email Liberator</string>
    </property>
   </widget>
   <widget class="QComboBox" name="FraktionDropBox">
@@ -811,61 +782,11 @@
     <string>FRAKTIONEN</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="OrganDropBox">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>200</y>
-     <width>191</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <property name="editable">
-    <bool>true</bool>
-   </property>
-   <property name="currentText">
-    <string/>
-   </property>
-   <item>
-    <property name="text">
-     <string>Ausschüsse</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Delegationen</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Andere Organe</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QLabel" name="OrganLabel">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>160</y>
-     <width>231</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>17</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>POLITISCHE ORGANE</string>
-   </property>
-  </widget>
   <widget class="QDialogButtonBox" name="Anwenden">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>250</y>
+     <x>320</x>
+     <y>160</y>
      <width>81</width>
      <height>26</height>
     </rect>
@@ -877,8 +798,8 @@
   <widget class="QDialogButtonBox" name="Abbrechen">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>250</y>
+     <x>410</x>
+     <y>160</y>
      <width>81</width>
      <height>26</height>
     </rect>
@@ -893,8 +814,8 @@
   <widget class="QPushButton" name="CopyToClipboard">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>620</y>
+     <x>230</x>
+     <y>540</y>
      <width>131</width>
      <height>41</height>
     </rect>
@@ -913,8 +834,8 @@
   <widget class="QPushButton" name="MailThemAll">
    <property name="geometry">
     <rect>
-     <x>590</x>
-     <y>620</y>
+     <x>370</x>
+     <y>540</y>
      <width>121</width>
      <height>41</height>
     </rect>
