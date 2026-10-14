@@ -29,7 +29,9 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
         self.ui = Ui_DenZieher()
         self.ui.setupUi(self)
+        self.clipboard = QApplication.clipboard()
         self.ui.Anwenden.clicked.connect(self.choiceApproved)
+        self.ui.CopyToClipboard.clicked.connect(self.clipboardSave)
     def choiceApproved(self):
         self.ui.OutputTextBox.setText("right on it Boss!")
 
@@ -40,6 +42,9 @@ class MainWindow(QMainWindow):
         self.thready.start(dobby)
         print("thrread sent off")
         
+    def clipboardSave(self):
+        cliptext = self.ui.OutputTextBox.toPlainText()
+        self.clipboard.setText(cliptext)
 
     def workerAnswer(self,emaillist):
         print("worker returned")
