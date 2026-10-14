@@ -54,7 +54,6 @@ def getEmaillist(country,faction):
         cleaned2 = cleaned.replace('[at]','@')
         email = cleaned2[::-1]
         emaillist.append(email)
-        print(email)
 
     if not emaillist:
         emaillist.append("couldnt find anyone... \n Bummer that")
