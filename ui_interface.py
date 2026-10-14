@@ -23,7 +23,7 @@ class Ui_DenZieher(object):
     def setupUi(self, DenZieher):
         if not DenZieher.objectName():
             DenZieher.setObjectName(u"DenZieher")
-        DenZieher.resize(515, 603)
+        DenZieher.resize(504, 603)
         palette = QPalette()
         brush = QBrush(QColor(255, 255, 255, 255))
         brush.setStyle(Qt.BrushStyle.SolidPattern)
@@ -157,12 +157,12 @@ class Ui_DenZieher(object):
         self.LandLabel.setFont(font)
         self.OutputBox = QFrame(DenZieher)
         self.OutputBox.setObjectName(u"OutputBox")
-        self.OutputBox.setGeometry(QRect(30, 200, 471, 321))
+        self.OutputBox.setGeometry(QRect(10, 200, 481, 321))
         self.OutputBox.setFrameShape(QFrame.Shape.StyledPanel)
         self.OutputBox.setFrameShadow(QFrame.Shadow.Raised)
         self.OutputTextBox = QTextBrowser(self.OutputBox)
         self.OutputTextBox.setObjectName(u"OutputTextBox")
-        self.OutputTextBox.setGeometry(QRect(0, 0, 711, 341))
+        self.OutputTextBox.setGeometry(QRect(10, 10, 461, 301))
         self.TitleLabel = QLabel(DenZieher)
         self.TitleLabel.setObjectName(u"TitleLabel")
         self.TitleLabel.setGeometry(QRect(50, 0, 421, 51))
