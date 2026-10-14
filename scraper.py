@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 import re
 
-def getEmaillist(country,faction,weirdthing,name):
+def getEmaillist(country,faction,weirdthing):
 
 
     URL = 'https://www.europarl.europa.eu/meps/de/full-list/all'
@@ -22,8 +22,6 @@ def getEmaillist(country,faction,weirdthing,name):
         members = [member for member in members if faction in str(member.contents)]
     if weirdthing:
         members = [member for member in members if weirdthing in str(member.contents)]
-    if name:
-        members = [member for member in members if name in str(member.contents)]
 
     links = [link.attrs['href'] for link in members]
 
