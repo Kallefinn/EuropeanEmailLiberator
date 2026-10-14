@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>504</width>
+    <width>512</width>
     <height>603</height>
    </rect>
   </property>
@@ -498,8 +498,13 @@
     <bool>true</bool>
    </property>
    <property name="currentText">
-    <string>Belgien</string>
+    <string/>
    </property>
+   <item>
+    <property name="text">
+     <string/>
+    </property>
+   </item>
    <item>
     <property name="text">
      <string>Belgien</string>
@@ -714,9 +719,29 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::FocusPolicy::WheelFocus</enum>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+   </property>
    <property name="editable">
     <bool>true</bool>
    </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="minimumContentsLength">
+    <number>1</number>
+   </property>
+   <item>
+    <property name="text">
+     <string/>
+    </property>
+   </item>
    <item>
     <property name="text">
      <string>Fraktion der Europäischen Volkspartei (Christdemokraten)</string>
