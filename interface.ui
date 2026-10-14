@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>515</width>
+    <width>504</width>
     <height>603</height>
    </rect>
   </property>
@@ -663,9 +663,9 @@
   <widget class="QFrame" name="OutputBox">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>10</x>
      <y>200</y>
-     <width>471</width>
+     <width>481</width>
      <height>321</height>
     </rect>
    </property>
@@ -678,10 +678,10 @@
    <widget class="QTextBrowser" name="OutputTextBox">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>711</width>
-      <height>341</height>
+      <x>10</x>
+      <y>10</y>
+      <width>461</width>
+      <height>301</height>
      </rect>
     </property>
    </widget>
