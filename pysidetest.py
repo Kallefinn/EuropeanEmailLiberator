@@ -10,16 +10,14 @@ class DataCarriage(QObject):
 
 class Worker(QRunnable):
 
-    def __init__(self,country,faction,weirdthing,name):
+    def __init__(self,country,faction):
         super().__init__()
         self.carrier = DataCarriage() 
         self.country = country
         self.faction = faction
-        self.weirdthing = weirdthing
-        self.name = name
     def run(self):
         print("getthosemails called")
-        emaillist = getEmaillist(self.country,self.faction,self.weirdthing,self.name)
+        emaillist = getEmaillist(self.country,self.faction)
         self.carrier.finished.emit(emaillist)
 
         
@@ -37,9 +35,7 @@ class MainWindow(QMainWindow):
 
         country = self.ui.LandDropBox.currentText()
         faction = self.ui.FraktionDropBox.currentText()
-        weirdthing = self.ui.OrganDropBox.currentText()
-        name = self.ui.NameInput.displayText()
-        dobby = Worker(country,faction,weirdthing,name)
+        dobby = Worker(country,faction)
         dobby.carrier.finished.connect(self.workerAnswer)
         self.thready.start(dobby)
         print("thrread sent off")
